@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: order-service
+  cloud:
+    consul:
+      host: 127.0.0.1
+      config:
+        format: yaml
+    circuitbreaker:
+      hystrix:
+        enabled: false
+    loadbalancer:
+      ribbon:
+        enabled: false
